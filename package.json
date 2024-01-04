@@ -23,6 +23,9 @@
     "eject": "react-scripts eject",
     "commitlint": "npx commitlint --edit"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "prettier --write"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -44,6 +47,8 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1"
   }
 }
